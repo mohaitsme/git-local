@@ -1,0 +1,12 @@
+yum install httpd -y
+systemctl enable httpd
+mkdir -p /var/www/html/orders
+echo  "This is orders app" > /var/www/html/orders/index.html
+systemctl start httpd
+
+
+yum install httpd -y
+systemctl enable httpd
+mkdir -p /var/www/html/payments
+echo  "This is Payments app" > /var/www/html/payments/index.html
+systemctl start httpd
